@@ -1,0 +1,12 @@
+{
+  "name": "19.configuration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.mjs",
+  "scripts": {
+    "start": "nodemon server.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
