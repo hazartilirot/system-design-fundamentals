@@ -1,0 +1,13 @@
+lockfileVersion: 5.3
+
+specifiers:
+  aes256: ^1.1.0
+
+dependencies:
+  aes256: 1.1.0
+
+packages:
+
+  /aes256/1.1.0:
+    resolution: {integrity: sha512-JfjTA5HEpvnn4lX9lsfgPMiV6HYqefRmvUj5MScIUeaRCbWEIT8URNpKA9ddY9iWl+Ye9oUHrdusO1cDmS/tEQ==}
+    dev: false
