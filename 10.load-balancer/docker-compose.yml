@@ -1,0 +1,43 @@
+version: '3.9'
+
+services:
+  web1:
+    container_name: web1
+    build: .
+    ports: 
+      - "4001"
+    environment:
+      - PORT=4001
+  web2:
+    container_name: web2
+    build: .
+    ports:
+      - "4002"
+    environment:
+      - PORT=4002
+  web3:
+    container_name: web3
+    build: .
+    ports:
+      - "4003"
+    environment:
+      - PORT=4003
+  web4:
+    container_name: web4
+    build: .
+    ports:
+      - "4004"
+    environment:
+      - PORT=4004
+  nginx-proxy:
+    container_name: nginx-proxy
+    build: nginx/
+    ports:
+      - "80:80"
+    links:
+      - web1
+      - web2
+      - web3
+      - web4
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
